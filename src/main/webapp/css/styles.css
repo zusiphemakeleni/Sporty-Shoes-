@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* General styling for the header */
+header {
+    width: 100%;
+    position: fixed; /* Keeps the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    background-color: white; /* Background color to distinguish the header */
+    border-bottom: 2px solid #ddd; /* Light border to separate the header from the rest of the content */
+}
+
+/* Styling for the top part of the header */
+.header-top {
+    background-color: #f4f4f4; /* Slightly gray background */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Thin border to separate from the bottom part */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Styling for the bottom part of the header */
+.header-bottom {
+    background-color: black; /* Dark background color for the navigation bar */
+    color: white; /* White text color for contrast */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Logo styling */
+.header-bottom .logo {
+    font-size: 1.8em; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Navigation styling */
+.header-bottom nav a {
+    color: white; /* White text color for navigation links */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1em; /* Consistent font size for navigation links */
+}
+
+/* Navigation link hover effect */
+.header-bottom nav a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Ensure the rest of the page content is not hidden behind the fixed header */
+body {
+    margin: 0;
+    padding-top: 80px; /* Adjust this value based on the header's height */
+}
